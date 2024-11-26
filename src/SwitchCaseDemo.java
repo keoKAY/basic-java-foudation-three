@@ -17,6 +17,8 @@ public class SwitchCaseDemo {
             System.out.println("Choose option (1-4): ");
             option = input.nextInt();
             switch (option) {
+
+                // using {} here to isolate the variables declared in the case 1
                 case 1: {
                     int price = 4000;
                     System.out.println("Bay chaa ");
