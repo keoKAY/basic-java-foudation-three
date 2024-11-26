@@ -10,6 +10,9 @@ public class SampleProgram {
         }
         do {
             System.out.println("1. Wage Calculator");
+            System.out.println("2. Money Exchange Program");
+            // USD-> KHR
+            // KHR -> USD -> RATE=4100
             System.out.println("5. Exit ");
 
             System.out.println("Choose (1 - 5) : ");
@@ -52,6 +55,9 @@ public class SampleProgram {
 
                 }
                 break;
+                case 2 :
+                    // this is where you write the money exchange code !!
+                    break;
                 default:
                     System.out.println("Invalid option!! Try again!");
                     break;
