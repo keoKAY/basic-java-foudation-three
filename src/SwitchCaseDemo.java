@@ -2,10 +2,8 @@ import java.util.Scanner;
 
 public class SwitchCaseDemo {
     public static void main(String[] args) {
-
         Scanner input = new Scanner(System.in);
         int option;
-
         do {
             System.out.println("_______<< ISTAD Restarant >>>______");
             System.out.println("1. Fried Rice ");
@@ -23,6 +21,22 @@ public class SwitchCaseDemo {
                     int price = 4000;
                     System.out.println("Bay chaa ");
                     System.out.println("Value of price : " + price);
+
+
+                    System.out.println("Choose Soup option (1-2): ");
+                    int soupOption = input.nextInt();
+                    String result = switch(soupOption){
+                        case 1 ,4 ,3 ->{
+                            System.out.println("Whatever!! ");
+                            yield "Normal Soup";
+                        }
+                        case 2 -> "333";
+                        default -> "No Soup ! ";
+                    };
+
+                    System.out.println("Soup Result is : "+result);
+
+                    // enhanced switch case ->
                     break;
                 }
                 case 2:
@@ -38,6 +52,14 @@ public class SwitchCaseDemo {
                     break;
                 case 5:
                     System.out.println("Exit ");
+                    break;
+//                case 7 , 8, 9 :
+//                    System.out.println("Same things ");
+//                    break;
+                case 7:
+                case 8:
+                case 9:
+                    System.out.println("the same case ! ");
                     break;
                 default:
                     System.out.println(" Invalid option!!! ");
