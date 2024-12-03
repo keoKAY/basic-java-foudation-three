@@ -34,8 +34,7 @@ public class PracticeThree {
                     floorNum = input.nextInt();
                     System.out.println("Enter the room number( 1-"+col+")");
                     roomNum = input.nextInt();
-
-
+                    // validation here to see if the3 room avaiable
                     System.out.println("Enter your name to buy the condo : ");
                     input.nextLine();// clear buffer
                     String name = input.nextLine();
