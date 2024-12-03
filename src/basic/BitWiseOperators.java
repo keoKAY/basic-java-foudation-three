@@ -1,3 +1,5 @@
+package basic;
+
 public class BitWiseOperators {
     public static void main(String[] args) {
         // Bitwise , & , | , ~ ,  ^, >> , << , >>> ( unsigned right shift )

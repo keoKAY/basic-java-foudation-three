@@ -1,4 +1,4 @@
-// parameters vs argument !
+package basic;// parameters vs argument !
 
 public class Variables {
     // instance variables -> variables that belong to the object

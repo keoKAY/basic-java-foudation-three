@@ -1,3 +1,5 @@
+package basic;
+
 public class AssignmentOperator {
     public static void main(String[] args) {
         // Assignment Operators : = , +=, .... %=

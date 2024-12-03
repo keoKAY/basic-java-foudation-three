@@ -1,3 +1,5 @@
+package basic;
+
 public class GoodByeWorld {
 
     public static void main(String[] args) {

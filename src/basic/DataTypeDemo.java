@@ -1,3 +1,5 @@
+package basic;
+
 public class DataTypeDemo {
     public static void main(String[] args) {
         // Working with primitive types

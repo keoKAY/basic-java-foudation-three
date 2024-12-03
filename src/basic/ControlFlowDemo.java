@@ -1,3 +1,5 @@
+package basic;
+
 // Ternary vs if else
 public class ControlFlowDemo {
     public static void main(String[] args) {

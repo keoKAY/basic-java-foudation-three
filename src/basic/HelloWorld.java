@@ -1,4 +1,4 @@
-import java.util.Scanner;
+package basic;
 
 // Flutter -> Everything in flutter is all about widget
 // Java -> Everything in java is object ( created from class )

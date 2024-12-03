@@ -1,3 +1,5 @@
+package basic;
+
 public class UnaryOperators {
     public static void main(String[] args) {
         // unary -> only one operand to perform operations
