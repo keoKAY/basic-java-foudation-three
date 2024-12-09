@@ -10,6 +10,7 @@ public class PracticeThree {
 
         int row, col, option;
         int floorNum, roomNum;
+        System.out.println("----------<<ROOM SETUP>>----------");
         System.out.println("Enter the number of floor: ");
         row = input.nextInt();
         System.out.println("Enter the number of rooms: ");
@@ -95,7 +96,6 @@ public class PracticeThree {
                     break;
                 case 4: {
                     int searchOption = 0;
-
                     do {
                         System.out.println("------<<Search for condo info>>------");
                         System.out.println("1. Search by owner name ");
@@ -110,7 +110,19 @@ public class PracticeThree {
                                 System.out.println("-----<<Search by name>>-----");
                                 break;
                             case 2:
-                                System.out.println("-----<<Search by flow>>-----");
+                                System.out.println("-----<<Search by floor>>-----");
+                                System.out.println("Enter floor number: ");
+                                // validation here
+                                floorNum = input.nextInt();
+
+                                System.out.println("Result of Floor: " + floorNum);
+
+                                for (int j = 0; j < condo[floorNum - 1].length; j++) {
+                                    System.out.print(condo[floorNum - 1][j] + " ");
+                                }
+                                System.out.println();
+
+
                                 break;
                             case 3:
                                 System.out.println("-----<<Search by row and col >>-----");
