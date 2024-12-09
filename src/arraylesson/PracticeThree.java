@@ -108,6 +108,30 @@ public class PracticeThree {
                         switch (searchOption) {
                             case 1:
                                 System.out.println("-----<<Search by name>>-----");
+
+                                System.out.println("Enter name to search :");
+                                input.nextLine();
+                                String ownerName = input.nextLine();
+
+                                boolean isFound = false;
+                                for (int i = 0; i < row; i++) {
+                                    for (int j = 0; j < condo[i].length; j++) {
+                                        if (ownerName.equals(condo[i][j])) {
+                                            isFound = true;
+                                            System.out.println("Record found!! ");
+                                            System.out.println("Owner name: " + ownerName);
+                                            System.out.println("Floor : " + (i + 1));
+                                            System.out.println("Room : " + (j + 1));
+                                        }
+                                    }
+                                }
+
+                                // !isFound = (isFound==false) , ( isFound !=true)
+                                if (isFound==false) {
+                                    System.out.println("Owner: "+ownerName+" not found!");
+                                }
+
+
                                 break;
                             case 2:
                                 System.out.println("-----<<Search by floor>>-----");
@@ -121,7 +145,6 @@ public class PracticeThree {
                                     System.out.print(condo[floorNum - 1][j] + " ");
                                 }
                                 System.out.println();
-
 
                                 break;
                             case 3:
