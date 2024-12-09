@@ -131,7 +131,6 @@ public class PracticeThree {
                                     System.out.println("Owner: "+ownerName+" not found!");
                                 }
 
-
                                 break;
                             case 2:
                                 System.out.println("-----<<Search by floor>>-----");
@@ -149,6 +148,7 @@ public class PracticeThree {
                                 break;
                             case 3:
                                 System.out.println("-----<<Search by row and col >>-----");
+                                // Do it by yourself !!
                                 break;
                             case 4:
                                 System.out.println("Exit from search feature!! ");
