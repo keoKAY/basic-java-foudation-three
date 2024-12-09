@@ -30,7 +30,8 @@ public class PracticeThree {
             System.out.println("2. Sell condo ");
             // search
             System.out.println("3. Show condo information ");
-            System.out.println("4. Exit");
+            System.out.println("4. Search for the info ");
+            System.out.println("5. Exit");
 
             System.out.println("Choose option (1-4): ");
             option = input.nextInt();
@@ -64,17 +65,17 @@ public class PracticeThree {
 
                     // if room is not null
                     // and the name is the same of the owner
-                    if(condo[floorNum - 1][roomNum - 1] == null) {
+                    if (condo[floorNum - 1][roomNum - 1] == null) {
                         System.out.println("Cannot sell the condo!! \n It does not belong to anyone yet !");
-                    }else {
+                    } else {
                         // verify the owner name
                         System.out.println("Confirm you name: ");
                         input.nextLine(); // clear
                         String ownerName = input.nextLine();
-                        if(ownerName.equals(condo[floorNum - 1][roomNum - 1])) {
+                        if (ownerName.equals(condo[floorNum - 1][roomNum - 1])) {
                             System.out.println("You have successfully sold a condo");
                             condo[floorNum - 1][roomNum - 1] = null;
-                        }else{
+                        } else {
                             System.out.println("This condo doesn't belong to you! ");
                         }
                     }
@@ -83,7 +84,6 @@ public class PracticeThree {
                     break;
                 case 3:
                     System.out.println("-------Show condo information-------");
-
                     // more updates here !
                     for (int i = row - 1; i >= 0; i--) {
                         System.out.print("Floor " + (i + 1) + ": ");
@@ -92,15 +92,43 @@ public class PracticeThree {
                         }
                         System.out.println();
                     }
-
                     break;
+                case 4: {
+                    int searchOption = 0;
 
-                case 4:
+                    do {
+                        System.out.println("------<<Search for condo info>>------");
+                        System.out.println("1. Search by owner name ");
+                        System.out.println("2. Search by floor ");
+                        System.out.println("3. Search by room [floor,room]:");
+                        System.out.println("4. Exit ");
+
+                        System.out.println("Choose your option: ");
+                        searchOption = input.nextInt();
+                        switch (searchOption) {
+                            case 1:
+                                System.out.println("-----<<Search by name>>-----");
+                                break;
+                            case 2:
+                                System.out.println("-----<<Search by flow>>-----");
+                                break;
+                            case 3:
+                                System.out.println("-----<<Search by row and col >>-----");
+                                break;
+                            case 4:
+                                System.out.println("Exit from search feature!! ");
+                                break;
+                        }
+                    } while (searchOption != 4);
+
+                }
+                break;
+                case 5:
                     System.out.println("Exit the program!!! ");
                     break;
             }
             // allow to wait for the pressing enter in order to continue
-            if (option != 4) {
+            if (option != 5) {
                 System.out.println("---------------Press ENTER to continue -----------");
                 input.nextLine(); // clearing the buffer from int
                 input.nextLine();
